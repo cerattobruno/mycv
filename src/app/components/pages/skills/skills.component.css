@@ -1,0 +1,28 @@
+.color {
+    color: black !important;
+}
+
+.card-img-overlay {
+    vertical-align: middle;
+}
+
+.botonCv {
+    /* border-radius: 2rem; */
+    border-color: #BEB47C;
+    background-color: #FFFEFB;
+    color: #131313;
+}
+
+
+/* .botonCv a {
+    color: #131313;
+}
+
+.botonCv a:hover {
+    color: #131313 !important;
+} */
+
+.botonCv:hover {
+    background-color: #BEB47C;
+    color: #FFFEFB;
+}

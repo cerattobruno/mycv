@@ -1,0 +1,67 @@
+.header-logo {
+    width: 50px;
+}
+
+.top-menu li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.top-menu li a {
+    /* color: #FFFEFB; */
+    color: #575757;
+}
+
+.top-menu li.active a {
+    color: #BEB47C;
+    font-weight: bold;
+}
+
+.top-menu li:hover a {
+    color: #BEB47C;
+}
+
+.top-menu li.active {
+    color: #BEB47C;
+}
+
+.top-menu-left {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.top-menu-right {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.rounded-more {
+    border-radius: 15px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.efecto {
+    float: left;
+    position: relative;
+}
+
+.prueba {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: #212F3D;
+    border-left: 3px solid #F0F3F4;
+    animation: maquina 5s infinite alternate steps(30);
+}
+
+@keyframes maquina {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}

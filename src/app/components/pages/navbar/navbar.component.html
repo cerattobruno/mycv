@@ -1,0 +1,26 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark color">
+    <a class="navbar-brand ml-3" [routerLink]="['/']" fragment=''><img class="header-logo" src="../../../../assets/images/bc_logo2.png" alt="logo" title="Bruno Ceratto"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto color top-menu">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment =='' || this.fragment==undefined}">
+                <a class="nav-link" [routerLink]="['/']" fragment=''>Home</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='skill'}">
+                <a class="nav-link" [routerLink]="['/']" fragment='skill'>Skills</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='education'}">
+                <a class="nav-link" [routerLink]="['']" fragment='education'>Education </a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'active' : this.fragment=='contact'}">
+                <a class="nav-link" [routerLink]="['']" fragment='contact'>Contact </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>

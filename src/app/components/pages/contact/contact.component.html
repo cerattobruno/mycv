@@ -1,0 +1,88 @@
+<div class="row contact">
+    <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108722.37639172723!2d-60.77629744895954!3d-31.618123588146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe!5e0!3m2!1ses-419!2sar!4v1592908499672!5m2!1ses-419!2sar"
+            width="90%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" SameSite=None; Secure></iframe>
+    </div>
+
+    <div class="col-md-6 m-auto">
+        <div class="row">
+            <h3>Contact</h3>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa fa-envelope"></i>
+            </div> &nbsp;
+            <div>
+                <p>cerattobruno@gmail.com</p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fa fa-github"></i>
+            </div> &nbsp;
+            <div>
+                <p>
+                    <a href="https://github.com/cerattobruno" target="_blank">github.com/cerattobruno</a>
+                </p>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div>
+                <i class="fa fa-whatsapp"></i>
+            </div> &nbsp;
+            <div>
+                <p>342 - 154300680</p>
+            </div>
+        </div> -->
+        <div class="row mt-2">
+            <h5>Contact me!</h5>
+        </div>
+        <div class="row">
+            <form #formContact="ngForm" (ngSubmit)="onSubmit(); formContact.reset()">
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <div class="form-group input-group">
+                            <input [ngClass]="{'input-missing' : nombrecompleto.touched && !nombrecompleto.valid}" type="text" class="form-control rounded" name="nombrecompleto" #nombrecompleto="ngModel" [(ngModel)]="contactonuevo.nombrecompleto" required placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group input-group">
+                            <input [ngClass]="{'input-missing' : email.touched && !email.valid}" type="email" class="form-control rounded" name="email" #email="ngModel" [(ngModel)]="contactonuevo.email" required pattern="[a-z]+[a-z0-9._]+@[a-z]+\.[a-z]+" placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <div class="form-group input-group">
+                            <input [ngClass]="{'input-missing' : asunto.touched && !asunto.valid}" type="text" class="form-control rounded" name="asunto" #asunto="ngModel" [(ngModel)]="contactonuevo.asunto" required placeholder="Subject">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <div class="form-group input-group">
+                            <textarea [ngClass]="{'input-missing' : mensaje.touched && !mensaje.valid}" class="form-control rounded" name="mensaje" #mensaje="ngModel" [(ngModel)]="contactonuevo.mensaje" placeholder="Message" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn  botonEnviar w-25 m-auto rounded" [disabled]="!formContact.form.valid">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="col-md-12 ">
+        <!-- <button class="btn btn-sm circle float-right" type="button">
+            <a class="nav-link boton float-left" [routerLink]="['/']" fragment=''>
+                <i class="fa fa-chevron-up "></i>
+            </a>
+        </button> -->
+
+        <a class="nav-link boton float-right" [routerLink]="['/']" fragment=''>
+            <i class="fa fa-chevron-circle-up "></i>
+        </a>
+
+    </div>
+</div>

@@ -1,0 +1,53 @@
+.circle {
+    /* height: 45px;
+    width: 45px; */
+    background-color: #BEB47C;
+    color: #F0F3F4;
+    border-radius: 2rem;
+}
+
+.botonEnviar {
+    background-color: #131313;
+    color: #F0F3F4;
+}
+
+.botonEnviar:hover {
+    background-color: #BEB47C;
+    color: #F0F3F4;
+}
+
+.boton {
+    font-size: 50px;
+}
+
+.boton:hover {
+    color: #BEB47C;
+}
+
+.circle:hover {
+    background-color: #131313;
+    color: #F0F3F4;
+    border-radius: 2rem;
+}
+
+a:link {
+    color: #131313;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #131313;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BEB47C;
+    background-color: transparent;
+}
+
+a:active {
+    color: #BEB47C;
+    background-color: transparent;
+}
