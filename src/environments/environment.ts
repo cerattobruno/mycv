@@ -4,6 +4,15 @@
 
 export const environment = {
   production: false
+//   firebase:{
+//     apiKey: "AIzaSyD9021CJGQhiXietbiNbxGU7x1ZJyQgPO8",
+//     authDomain: "brunocerattocv.firebaseapp.com",
+//     databaseURL: "https://brunocerattocv.firebaseio.com",
+//     projectId: "brunocerattocv",
+//     storageBucket: "brunocerattocv.appspot.com",
+//     messagingSenderId: "645896926383",
+//     appId: "1:645896926383:web:ecec888183fe93507b505a"
+// }   
 };
 
 /*

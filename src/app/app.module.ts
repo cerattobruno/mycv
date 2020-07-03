@@ -10,6 +10,11 @@ import { SkillsComponent } from './components/pages/skills/skills.component';
 import { EducationComponent } from './components/pages/education/education.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 
+// Conexion a firebase
+// import { AngularFireModule } from '@angular/fire';
+// import { AngularFireDatabaseModule} from '@angular/fire/database'
+// import { environment } from '../../src/environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +27,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

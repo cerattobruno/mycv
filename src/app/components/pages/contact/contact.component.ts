@@ -11,6 +11,8 @@ export class ContactComponent implements OnInit {
   
   public fragment: string;
 
+  public listo = false;
+
   // itemRef: AngularFireObject<any>;
   // item: Observable<any>;
   // itemname: PathReference = 'contacto';

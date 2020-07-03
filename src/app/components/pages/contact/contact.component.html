@@ -34,10 +34,10 @@
                 <p>342 - 154300680</p>
             </div>
         </div> -->
-        <div class="row mt-2">
+        <div *ngIf="listo" class="row mt-2">
             <h5>Contact me!</h5>
         </div>
-        <div class="row">
+        <div *ngIf="listo" class="row">
             <form #formContact="ngForm" (ngSubmit)="onSubmit(); formContact.reset()">
                 <div class="form-row">
                     <div class="col-md-12">
@@ -74,11 +74,6 @@
     </div>
 
     <div class="col-md-12 ">
-        <!-- <button class="btn btn-sm circle float-right" type="button">
-            <a class="nav-link boton float-left" [routerLink]="['/']" fragment=''>
-                <i class="fa fa-chevron-up "></i>
-            </a>
-        </button> -->
 
         <a class="nav-link boton float-right" [routerLink]="['/']" fragment=''>
             <i class="fa fa-chevron-circle-up "></i>
